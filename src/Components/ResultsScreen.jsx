@@ -2,15 +2,11 @@ import React, { useMemo } from 'react'
 
 const ResultsScreen = ({ questionsData = [] }) => {
     const scoreOfUser = useMemo(() => {
-        let correctAnswersCount = 0;
         if (questionsData.length > 0) {
+            let correctAnswersCount = 0;
             questionsData.forEach(({ correctAnswer, selectedAnswer }) => {
                 if (selectedAnswer === correctAnswer) {
                     correctAnswersCount += 1;
-                } else if (correctAnswersCount > 0) {
-                    correctAnswersCount -= 1;
-                } else {
-                    correctAnswersCount = 0;
                 }
             })
             return { correctAnswersCount, score: (correctAnswersCount / questionsData.length) * 100 };

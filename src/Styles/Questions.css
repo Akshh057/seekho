@@ -1,0 +1,6 @@
+.questions {
+    /* min-width: 440px;
+    min-height: 500px; */
+    flex: 0.5;
+    border: 1px solid red
+}

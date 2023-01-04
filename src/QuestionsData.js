@@ -8,7 +8,7 @@ export const QuestionsData = [
             'answer 4',
         ],
         correctAnswer: 'answer 3',
-        selectedAnswer: ''
+        selectedAnswer: null
     },
     {
         question: 'Question 2',
@@ -19,7 +19,7 @@ export const QuestionsData = [
             'answer 4',
         ],
         correctAnswer: 'answer 2',
-        selectedAnswer: ''
+        selectedAnswer: null
     },
     {
         question: 'Question 3',
@@ -30,7 +30,7 @@ export const QuestionsData = [
             'answer 4',
         ],
         correctAnswer: 'answer 4',
-        selectedAnswer: ''
+        selectedAnswer: null
     },
     {
         question: 'Question 4',
@@ -41,7 +41,7 @@ export const QuestionsData = [
             'answer 4',
         ],
         correctAnswer: 'answer 5',
-        selectedAnswer: ''
+        selectedAnswer: null
     },
     {
         question: 'Question 5',
@@ -52,6 +52,6 @@ export const QuestionsData = [
             'answer 4',
         ],
         correctAnswer: 'answer 1',
-        selectedAnswer: ''
+        selectedAnswer: null
     }
 ];

@@ -17,7 +17,7 @@ const AnswerOptions = ({ questionsData = [], setQuestionsData, activeIndex }) =>
         <>
             {
                 answerOptions.length ? answerOptions.map((answer) => {
-                    return <label key={`${answer}-1`}>
+                    return <label key={`${answer}-1`} className={`optionLabel ${selectedAnswer === answer ? 'selected' : ''}`}>
                         <input type="radio" value={answer} checked={selectedAnswer === answer} onChange={() => handleSelectAnswer(answer)} />
                         {answer}
                     </label>

@@ -8,7 +8,7 @@ const Questions = ({ questionsData, setQuestionsData }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const increaseIndex = () => {
         setCurrentIndex((prevIndex) => {
-            return prevIndex !== questionsData.length - 1 ? prevIndex + 1 : 0;
+            return prevIndex + 1;
         })
     }
     const decreaseIndex = () => {
@@ -18,12 +18,14 @@ const Questions = ({ questionsData, setQuestionsData }) => {
     }
     return (
         <div className='questions'>
-            Attempt Questions here
-            <h3>{questionsData[currentIndex]?.question}</h3>
+            <h2> Attempt Questions here 👇</h2>
+            <h3>{questionsData[currentIndex]?.question} {currentIndex + 1}/{questionsData.length}</h3>
             <AnswerOptions questionsData={questionsData} setQuestionsData={setQuestionsData} activeIndex={currentIndex} />
-            <button onClick={increaseIndex}>Next</button>
-            {currentIndex !== 0 ? <button onClick={decreaseIndex}>Previous</button> : null}
-        </div>
+            <div className='buttonsContainer'>
+                {currentIndex !== questionsData.length - 1 ? <button className='button' onClick={increaseIndex}>Next Question</button> : null}
+                {currentIndex !== 0 ? <button className='button' onClick={decreaseIndex}> Previous Question</button> : null}
+            </div>
+        </div >
     )
 }
 

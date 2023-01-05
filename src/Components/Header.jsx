@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <h1>Questions & Answers Web App</h1>
+        <h1 style={{ color: 'white' }}>Questions & Answers Web App</h1>
     )
 }
 

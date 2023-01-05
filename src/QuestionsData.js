@@ -1,57 +1,57 @@
 export const QuestionsData = [
     {
-        question: 'Question 1',
+        question: 'Which is the largest state of India by land ?',
         answerOptions: [
-            'answer 1',
-            'answer 2',
-            'answer 3',
-            'answer 4',
+            'Maharashtra',
+            'Rajasthan',
+            'Tamil Nadu',
+            'Uttar Pradesh',
         ],
-        correctAnswer: 'answer 3',
+        correctAnswer: 'Rajasthan',
         selectedAnswer: null
     },
     {
-        question: 'Question 2',
+        question: 'Which is the largest state of India by population ?',
         answerOptions: [
-            'answer 1',
-            'answer 2',
-            'answer 3',
-            'answer 4',
+            'Punjab',
+            'Uttar Pradesh',
+            'Karnataka',
+            'Rajasthan',
         ],
-        correctAnswer: 'answer 2',
+        correctAnswer: 'Uttar Pradesh',
         selectedAnswer: null
     },
     {
-        question: 'Question 3',
+        question: 'Which cricketer has the highest number of centuries in all formats ?',
         answerOptions: [
-            'answer 1',
-            'answer 2',
-            'answer 3',
-            'answer 4',
+            'Virat Kohli',
+            'Ricky Ponting',
+            'Sir Don Bradman',
+            'Sachin Tendulkar',
         ],
-        correctAnswer: 'answer 4',
+        correctAnswer: 'Sachin Tendulkar',
         selectedAnswer: null
     },
     {
-        question: 'Question 4',
+        question: 'FIFA World cup 2022 was hosted by which country ?',
         answerOptions: [
-            'answer 1',
-            'answer 2',
-            'answer 3',
-            'answer 4',
+            'India',
+            'USA',
+            'UK',
+            'Qatar',
         ],
-        correctAnswer: 'answer 5',
+        correctAnswer: 'Qatar',
         selectedAnswer: null
     },
     {
-        question: 'Question 5',
+        question: 'Hindi divas is celebrated in india on ?',
         answerOptions: [
-            'answer 1',
-            'answer 2',
-            'answer 3',
-            'answer 4',
+            '14th September',
+            '12th April',
+            '10th April',
+            '14th December',
         ],
-        correctAnswer: 'answer 1',
+        correctAnswer: '14th September',
         selectedAnswer: null
     }
 ];

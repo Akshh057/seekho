@@ -13,12 +13,17 @@ const ResultsScreen = ({ questionsData = [] }) => {
         }
     }, [questionsData])
 
+    const refreshPage = () => {
+        window.location.reload();
+    }
+
     return (
-        <div>
-            <p> You have completed the test. your score is as below </p>
+        <div className='resultsContainer'>
+            <h2> You have completed the test. 🎉 </h2>
             <p> Questions Asked - {questionsData.length} </p>
-            <p> Correct Answers - {scoreOfUser.correctAnswersCount} </p>
+            <p> Correct Answers ✅  - {scoreOfUser.correctAnswersCount} </p>
             <p>Your score - {scoreOfUser.score} %</p>
+            <button className='button' onClick={refreshPage}>Retake Test ↻</button>
         </div>
     )
 }

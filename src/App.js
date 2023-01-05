@@ -21,7 +21,7 @@ function App() {
           <>
             <Answers questionsData={questionsData} />
             <Questions questionsData={questionsData} setQuestionsData={setQuestionsData} />
-            <button onClick={handleSubmit}>Submit</button>
+            <button className="button submitBtn" onClick={handleSubmit}>Submit Test</button>
           </>
           :
           <ResultsScreen questionsData={questionsData} />
